@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="10dp"
+    android:elevation="3dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="10dp"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="1dp"
+            tools:src="@tools:sample/avatars" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/iv">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="Name"
+                android:layout_marginLeft="30dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:id="@+id/tv_name"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_below="@id/tv_name"
+                android:layout_marginTop="20dp"
+                android:text="age"
+                android:id="@+id/tv_age"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_name"
+                android:text="location"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/tv_age"
+
+                android:id="@+id/tv_location"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
